@@ -1,6 +1,7 @@
 # Live-Policy-Club
 
-```Frontend in React with Redux
+```
+   Frontend in React with Redux
   `Backend is in Strapi
 ```
 
