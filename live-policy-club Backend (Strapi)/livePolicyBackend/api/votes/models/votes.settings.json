@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "votes",
+  "info": {
+    "name": "Votes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "bills": {
+      "collection": "bills",
+      "via": "votes",
+      "dominant": true
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "votes",
+      "dominant": true
+    }
+  }
+}

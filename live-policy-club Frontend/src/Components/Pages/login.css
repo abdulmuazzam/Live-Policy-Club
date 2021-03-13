@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px) {
+  #cardLogin {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #cardLogin {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #cardLogin {
+    width: 30%;
+  }
+}

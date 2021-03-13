@@ -1,0 +1,51 @@
+ 
+{
+    "routes": [
+      {
+        "method": "PUT",
+        "path": "/users/change-name",
+        "handler": "User.changeName",
+        "config": {
+          "policies": [],
+          "prefix": "",
+          "description": "Update the logged in user name information",
+          "tag": {
+            "plugin": "users-permissions",
+            "name": "User",
+            "actionType": "update"
+          }
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/users/change-password",
+        "handler": "User.changePassword",
+        "config": {
+          "policies": [],
+          "prefix": "",
+          "description": "Update the logged in user password information",
+          "tag": {
+            "plugin": "users-permissions",
+            "name": "User",
+            "actionType": "update"
+          }
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/users",
+        "handler": "User.find",
+        "config": {
+          "policies": [],
+          "prefix": "",
+          "description": "Retrieve all user documents",
+          "tag": {
+            "plugin": "users-permissions",
+            "name": "User",
+            "actionType": "find"
+          }
+        }
+      }
+    ]
+  }
+  

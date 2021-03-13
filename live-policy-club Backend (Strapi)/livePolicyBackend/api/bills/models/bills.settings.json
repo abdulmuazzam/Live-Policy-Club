@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bills",
+  "info": {
+    "name": "Bills",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Billname": {
+      "type": "string"
+    },
+    "billdescription": {
+      "type": "text"
+    },
+    "claim": {
+      "type": "boolean"
+    },
+    "billprice": {
+      "type": "float"
+    },
+    "status": {
+      "type": "string"
+    },
+    "votes": {
+      "via": "bills",
+      "collection": "votes"
+    }
+  }
+}
